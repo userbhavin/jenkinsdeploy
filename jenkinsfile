@@ -19,7 +19,7 @@ node {
                                     tenantIdVariable: 'AZURE_TENANT')]) {
                                       
       ansiblePlaybook installation: 'ansible',
-      playbook: 'complete/deploy/ansible/webapp.yml'
+      playbook: 'ansible.yml'
     }
 
     azureWebAppPublish azureCredentialsId: env.AZURE_CRED_ID,
